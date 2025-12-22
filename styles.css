@@ -384,12 +384,21 @@ section {
 }
 
 .about-author h2 {
-    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .author-content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+    max-width: 900px;
+    align-items: start;
+}
+
+.author-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 .author-text p {
@@ -549,6 +558,16 @@ footer {
         display: inline-flex;
         margin-right: 1rem;
         vertical-align: middle;
+    }
+
+    .author-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .author-image {
+        max-width: 200px;
+        margin: 0 auto;
     }
 }
 
