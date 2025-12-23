@@ -316,7 +316,7 @@ section {
 
 /* FAQ Section */
 .faq {
-    background: var(--bg-white);
+    background: var(--bg-light);
 }
 
 .faq h2 {
