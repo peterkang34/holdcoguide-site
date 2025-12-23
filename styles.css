@@ -314,6 +314,45 @@ section {
     border-radius: 8px;
 }
 
+/* FAQ Section */
+.faq {
+    background: var(--bg-white);
+}
+
+.faq h2 {
+    margin-bottom: 3rem;
+}
+
+.faq-list {
+    max-width: 900px;
+}
+
+.faq-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq-item h3 {
+    font-size: 1.35rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin: 0;
+}
+
 /* Reviews Section */
 .reviews {
     background: var(--primary-color);
