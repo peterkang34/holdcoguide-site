@@ -537,6 +537,137 @@ section {
     color: var(--primary-color);
 }
 
+/* Newsletter Section */
+.newsletter {
+    background: var(--bg-white);
+    padding: var(--spacing-xl) 0;
+}
+
+.newsletter .container {
+    max-width: 700px;
+}
+
+.newsletter .formkit-form {
+    background: var(--bg-light) !important;
+    border: 2px solid var(--border-color) !important;
+    border-radius: 0 !important;
+    padding: 3rem !important;
+    max-width: 100% !important;
+}
+
+.newsletter .formkit-header h2 {
+    font-family: 'Crimson Pro', serif !important;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+}
+
+.newsletter .formkit-subheader {
+    margin-bottom: 2rem !important;
+    text-align: left !important;
+}
+
+.newsletter .formkit-subheader p {
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    color: var(--text-color) !important;
+    margin: 0 !important;
+}
+
+.newsletter .formkit-fields {
+    display: flex !important;
+    gap: 1rem !important;
+    margin: 0 !important;
+}
+
+.newsletter .formkit-field {
+    flex: 1 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+}
+
+.newsletter .formkit-input {
+    width: 100% !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    border: 2px solid var(--border-color) !important;
+    border-radius: 0 !important;
+    background: white !important;
+    color: var(--text-color) !important;
+    font-family: 'Inter', sans-serif !important;
+    transition: border-color 0.3s ease !important;
+}
+
+.newsletter .formkit-input:focus {
+    outline: none !important;
+    border-color: var(--primary-color) !important;
+}
+
+.newsletter .formkit-submit {
+    padding: 1rem 2rem !important;
+    background: var(--primary-color) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-family: 'Inter', sans-serif !important;
+    margin: 0 !important;
+}
+
+.newsletter .formkit-submit:hover {
+    background: var(--secondary-color) !important;
+    transform: translateY(-2px) !important;
+}
+
+.newsletter .formkit-guarantee {
+    margin-top: 1rem !important;
+    text-align: left !important;
+}
+
+.newsletter .formkit-guarantee p {
+    font-size: 0.9rem !important;
+    color: var(--text-light) !important;
+    margin: 0 !important;
+}
+
+.newsletter .formkit-alert {
+    background: #fde8e2 !important;
+    border: 1px solid #f2643b !important;
+    color: #ea4110 !important;
+    padding: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    border-radius: 0 !important;
+}
+
+.newsletter .formkit-alert-success {
+    background: #d3fbeb !important;
+    border-color: #10bf7a !important;
+    color: #0c905c !important;
+}
+
+.newsletter .formkit-powered-by-convertkit-container {
+    display: none !important;
+}
+
+@media (max-width: 640px) {
+    .newsletter .formkit-form {
+        padding: 2rem !important;
+    }
+
+    .newsletter .formkit-fields {
+        flex-direction: column !important;
+    }
+
+    .newsletter .formkit-submit {
+        width: 100% !important;
+    }
+}
+
 /* Footer */
 footer {
     background: var(--primary-color);
