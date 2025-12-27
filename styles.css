@@ -578,14 +578,14 @@ section {
 
 .newsletter .formkit-fields {
     display: flex !important;
+    flex-direction: column !important;
     gap: 1rem !important;
     margin: 0 !important;
 }
 
 .newsletter .formkit-field {
-    flex: 1 !important;
+    width: 100% !important;
     margin: 0 !important;
-    min-width: 0 !important;
 }
 
 .newsletter .formkit-input {
@@ -644,6 +644,12 @@ section {
     border-radius: 0 !important;
 }
 
+.newsletter .formkit-alert:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .newsletter .formkit-alert-success {
     background: #d3fbeb !important;
     border-color: #10bf7a !important;
@@ -654,17 +660,13 @@ section {
     display: none !important;
 }
 
+.newsletter .formkit-submit {
+    width: 100% !important;
+}
+
 @media (max-width: 640px) {
     .newsletter .formkit-form {
         padding: 2rem !important;
-    }
-
-    .newsletter .formkit-fields {
-        flex-direction: column !important;
-    }
-
-    .newsletter .formkit-submit {
-        width: 100% !important;
     }
 }
 
