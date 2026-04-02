@@ -482,6 +482,84 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 /* ==========================================================================
+   Audiobook
+   ========================================================================== */
+
+.audiobook {
+    padding: var(--section-pad) 0;
+    background: var(--bg);
+}
+
+.audiobook-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 56px;
+    align-items: center;
+}
+
+.audiobook-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+.audiobook h2 {
+    margin-bottom: 16px;
+}
+
+.audiobook-text > p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 24px;
+}
+
+.audiobook-links {
+    display: flex;
+    gap: 12px;
+}
+
+.audiobook-btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.audiobook-btn svg {
+    flex-shrink: 0;
+}
+
+.supplement-card {
+    padding: 32px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.supplement-icon {
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.supplement-card h3 {
+    margin-bottom: 10px;
+}
+
+.supplement-card > p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.supplement-btn {
+    width: 100%;
+}
+
+/* ==========================================================================
    Game
    ========================================================================== */
 
@@ -537,6 +615,7 @@ strong { font-weight: 600; color: var(--ink); }
 .game-shot {
     position: absolute;
     width: 88%;
+    height: auto;
     border-radius: 4px;
     border: 1.5px solid rgba(255,255,255,0.15);
     box-shadow:
@@ -615,7 +694,7 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 .faq-item[open] .faq-answer {
-    max-height: 200px;
+    max-height: 400px;
     opacity: 1;
 }
 
@@ -790,6 +869,25 @@ strong { font-weight: 600; color: var(--ink); }
         grid-template-columns: 1fr;
     }
 
+    .audiobook-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .audiobook-text > p {
+        max-width: 100%;
+    }
+
+    .audiobook-links {
+        justify-content: center;
+    }
+
+    .supplement-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     .game-layout {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -797,9 +895,18 @@ strong { font-weight: 600; color: var(--ink); }
     }
 
     .game-screenshots {
-        height: 280px;
+        position: relative;
+        height: auto;
         max-width: 480px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .game-shot {
+        position: static;
+        width: 100%;
     }
 
     .author-layout {
@@ -865,6 +972,16 @@ strong { font-weight: 600; color: var(--ink); }
         max-width: 280px;
     }
 
+    .audiobook-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .audiobook-links .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
     .problem-questions li,
     .learn-grid li,
     .audience-item {
@@ -876,10 +993,6 @@ strong { font-weight: 600; color: var(--ink); }
     }
 
     .game-screenshots {
-        height: 220px;
-    }
-
-    .game-shot {
-        width: 92%;
+        max-width: 100%;
     }
 }
